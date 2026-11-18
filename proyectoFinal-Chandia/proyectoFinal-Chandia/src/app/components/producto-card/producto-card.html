@@ -1,0 +1,26 @@
+  <!-- TARJETA 1 -->
+     <div class="card tarjeta-destino h-100">
+
+  <img
+    [src]="producto.url"
+    alt="Paisaje de montañas de la Patagonia">
+
+  <div class="card-body">
+
+    <h3 class="card-title">{{ producto.titulo }}</h3>
+
+    <p class="card-text">
+      {{ producto.descripcion }}
+    </p>
+
+    <a
+      [href]="producto.mapsUrl"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="enlace-destino">
+      Ir al destino →
+    </a>
+
+  </div>
+
+</div>

@@ -1,0 +1,51 @@
+
+:host {
+  display: block;
+
+  --verde-musgo: #283b27;
+  --verde-oliva: #596b46;
+  --verde-luz: #a8d5a2;
+  --crema: #f4f1e7;
+}
+
+/* FONDO GENERAL */
+.error404 {
+  background-color: var(--crema);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* SUBTÍTULO */
+.subtitulo {
+  color: var(--verde-oliva);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* NÚMERO 404 */
+.error404 h1 {
+  color: var(--verde-musgo);
+  font-size: 130px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 15px 0;
+}
+
+/* TÍTULO */
+.error404 h2 {
+  color: var(--verde-musgo);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* DESCRIPCIÓN */
+.error404 p {
+  color: #555b50;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+

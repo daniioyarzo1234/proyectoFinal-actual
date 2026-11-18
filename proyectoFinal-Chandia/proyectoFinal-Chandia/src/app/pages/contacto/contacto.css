@@ -1,0 +1,202 @@
+
+:host {
+  display: block;
+
+  --verde-musgo: #283b27;
+  --verde-oliva: #596b46;
+  --verde-luz: #a8d5a2;
+  --crema: #f4f1e7;
+}
+
+/* GENERAL */
+.contacto {
+  background-color: #ffffff;
+  color: #555b50;
+}
+
+/* PORTADA */
+.portada-contacto {
+  background: linear-gradient(
+    rgba(40, 59, 39, 0.7),
+    rgba(40, 59, 39, 0.7)
+  ),
+  url('/assets/img/rio-negro-portada.jpg');
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+.portada-contacto h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.portada-contacto p {
+  font-size: 20px;
+}
+
+/* TÍTULOS */
+.subtitulo {
+  color: var(--verde-oliva);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.contacto h2 {
+  color: var(--verde-musgo);
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.contacto h3 {
+  color: var(--verde-musgo);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* FORMULARIO */
+.formulario-contacto {
+  padding: 30px;
+  background-color: var(--crema);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.form-label {
+  color: var(--verde-musgo);
+  font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid #d5d9cd;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.form-control:focus {
+  border-color: var(--verde-oliva);
+  box-shadow: 0 0 0 0.2rem rgba(89, 107, 70, 0.2);
+}
+
+/* BOTÓN ENVIAR */
+.btn-enviar {
+  background-color: var(--verde-musgo);
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: var(--verde-oliva);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* INFORMACIÓN */
+.info-contacto {
+  padding: 30px;
+  height: 100%;
+  background-color: #f8f9f5;
+  border-radius: 15px;
+}
+
+.info-contacto > p {
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.dato-contacto {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.dato-contacto span {
+  font-size: 28px;
+}
+
+.dato-contacto h4 {
+  color: var(--verde-musgo);
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dato-contacto p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* CIERRE */
+.cierre-contacto {
+  background-color: var(--verde-musgo);
+  color: white;
+}
+
+.cierre-contacto h2 {
+  color: white;
+}
+
+.cierre-contacto p {
+  max-width: 700px;
+  margin: 15px auto 25px;
+  line-height: 1.8;
+}
+
+.btn-destinos {
+  background-color: var(--verde-luz);
+  color: var(--verde-musgo);
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-destinos:hover {
+  background-color: white;
+  color: var(--verde-musgo);
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .portada-contacto {
+    min-height: 250px;
+  }
+
+  .portada-contacto h1 {
+    font-size: 35px;
+  }
+
+  .portada-contacto p {
+    font-size: 17px;
+  }
+
+  .contacto h2 {
+    font-size: 26px;
+  }
+
+  .formulario-contacto,
+  .info-contacto {
+    padding: 22px;
+  }
+
+}

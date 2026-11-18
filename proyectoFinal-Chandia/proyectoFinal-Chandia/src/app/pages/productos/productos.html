@@ -1,0 +1,20 @@
+<section class="destacados py-5">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2>¡Empezá tu búsqueda!</h2>
+      <p>Acá podrás ver todos nuestros lugares turísticos.</p>
+    </div>
+
+    <div class="row g-4">
+
+      @for (p of productos; track p.id) {
+        <div class="col-12 col-md-6 col-lg-4">
+          <app-producto-card [producto]="p"></app-producto-card>
+        </div>
+      }
+
+    </div>
+
+  </div>
+</section>

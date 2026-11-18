@@ -1,0 +1,71 @@
+
+:host {
+  display: block;
+  height: 100%;
+
+  --verde-musgo: #283b27;
+  --verde-oliva: #596b46;
+  --verde-luz: #a8d5a2;
+}
+
+/* Tarjeta */
+.tarjeta-destino {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.tarjeta-destino:hover {
+  transform: scale(1.03);
+
+  border-color: var(--verde-luz);
+
+  box-shadow:
+    0 0 8px rgba(42, 90, 42, 0.959),
+    0 0 18px rgb(10, 12, 10),
+    0 8px 25px rgb(36, 63, 35);
+}
+
+/* Imagen */
+.tarjeta-destino img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+/* Cuerpo de la tarjeta */
+.tarjeta-destino .card-body {
+  padding: 24px;
+}
+
+/* Título */
+.tarjeta-destino h3 {
+  color: var(--verde-musgo);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Descripción */
+.tarjeta-destino .card-text {
+  color: #555b50;
+  line-height: 1.7;
+}
+
+/* Enlace */
+.enlace-destino {
+  color: var(--verde-musgo);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.enlace-destino:hover {
+  color: var(--verde-oliva);
+  text-decoration: underline;
+}

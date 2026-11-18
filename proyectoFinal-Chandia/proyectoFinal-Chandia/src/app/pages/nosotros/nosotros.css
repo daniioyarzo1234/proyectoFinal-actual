@@ -1,0 +1,176 @@
+
+:host {
+  --verde-musgo: #283b27;
+  --verde-oliva: #596b46;
+  --verde-luz: #a8d5a2;
+  --crema: #f4f1e7;
+}
+
+/* GENERAL */
+.nosotros {
+  background-color: #f5f5f5;
+  color: #555b50;
+}
+
+/* PORTADA */
+.portada-nosotros {
+  background: linear-gradient(
+    rgba(40, 59, 39, 0.65),
+    rgba(40, 59, 39, 0.65)
+  ),
+  url('/assets/img/rio-negro-portada.jpg');
+
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.portada-nosotros h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.portada-nosotros p {
+  font-size: 21px;
+}
+
+/* IMAGEN */
+.imagen-nosotros {
+  width: 100%;
+  height: 585px;
+  object-fit: cover;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* SUBTÍTULOS */
+.subtitulo {
+  color: var(--verde-oliva);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* TÍTULOS */
+.nosotros h2 {
+  color: var(--verde-musgo);
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+/* PÁRRAFOS */
+.nosotros p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* OBJETIVO */
+.objetivo {
+  background-color: var(--crema);
+}
+
+.texto-objetivo {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* TARJETAS */
+.tarjeta-nosotros {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+  transition: all 0.3s ease;
+}
+
+.tarjeta-nosotros:hover {
+  transform: translateY(-6px);
+  border-color: var(--verde-luz);
+
+  box-shadow:  0 0 8px rgba(42, 90, 42, 0.959),
+    0 0 18px rgb(10, 12, 10),
+    0 8px 25px rgb(36, 63, 35);
+}
+
+.tarjeta-nosotros .card-body {
+  padding: 30px 22px;
+}
+
+.tarjeta-nosotros h3 {
+  color: var(--verde-musgo);
+  font-size: 23px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.icono-nosotros {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+/* CIERRE */
+.cierre-nosotros {
+  background-color: var(--verde-musgo);
+  color: white;
+}
+
+.cierre-nosotros h2 {
+  color: white;
+}
+
+.cierre-nosotros p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+}
+
+/* BOTÓN */
+.btn-destinos {
+  background-color: var(--verde-luz);
+  color: var(--verde-musgo);
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.btn-destinos:hover {
+  background-color: white;
+  color: var(--verde-musgo);
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .portada-nosotros {
+    min-height: 270px;
+  }
+
+  .portada-nosotros h1 {
+    font-size: 34px;
+  }
+
+  .portada-nosotros p {
+    font-size: 17px;
+  }
+
+  .nosotros h2 {
+    font-size: 26px;
+  }
+
+  .imagen-nosotros {
+    height: 280px;
+  }
+
+}
